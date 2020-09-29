@@ -14,13 +14,13 @@ def generate_NextState(x1,x2,y1,y2,current_state_x,current_state_y):
         next_state_y = randint(y1,y2)
     return next_state_x,next_state_y 
     
-
+    
 def Simulated_Annealing(x1,x2,y1,y2):
-    # Temperature define
-    T_Max = 10000
+    # Temperature definecurrent_cost
+    T_Max = 100000
     T_Min = 0.001
     T = T_Max
-    cooling_rate = 0.9999   
+    cooling_rate = 0.99999
     
     # Initial State
     current_state_x = randint(x1,x2)

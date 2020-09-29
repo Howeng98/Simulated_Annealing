@@ -53,7 +53,7 @@ def Simulated_Annealing(x1,x2,y1,y2):
                 current_state_y = next_state_y
                 current_cost = next_cost
 
-        # update Temperature
+        # Update Temperature
         T = T * cooling_rate
     
     print('------ Simulated_Annealing ------')

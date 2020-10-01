@@ -18,10 +18,10 @@ def generate_NextState(x1,x2,y1,y2,current_state_x,current_state_y):
 
 def Simulated_Annealing(x1,x2,y1,y2):    
     # Temperature definecurrent_cost    
-    T_Max = 10000
-    T_Min = 0.001
+    T_Max = 100000
+    T_Min = 0.0001
     T = T_Max    
-    cooling_rate = 0.9999
+    cooling_rate = 0.99999
     probability = 0
     counter = 0
     cost_list = []
@@ -95,7 +95,9 @@ def Simulated_Annealing(x1,x2,y1,y2):
     # plt.show()
 
     print('------ Simulated_Annealing ------')
-    print('X:{} Y:{} Z:{:.2f}'.format(current_state_x,current_state_y,current_cost))        
+    print(current_state_x)
+    print(current_state_y)
+    print('{:.3f}'.format(current_cost))        
 
 def Brutal_Force(x1,x2,y1,y2):
     z = 0
@@ -106,8 +108,10 @@ def Brutal_Force(x1,x2,y1,y2):
                 x = i
                 y = j
                 z = result
-    print('---------- Brutal_Force ---------')
-    print('X:{} Y:{} Z:{:.2f}'.format(x,y,z))
+    print('---------- Brute_Force ----------')
+    print(x)
+    print(y)        
+    print('{:.3f}'.format(z))
 
 def main():
     # Read input data range
